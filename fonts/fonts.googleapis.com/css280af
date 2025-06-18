@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v33/HhyJU5sn9vOmLxNkIwRSjTVNWLEJabMV3A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v33/HhyJU5sn9vOmLxNkIwRSjTVNWLEJN7MV3A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v33/HhyJU5sn9vOmLxNkIwRSjTVNWLEJBbMV3A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v33/HhyJU5sn9vOmLxNkIwRSjTVNWLEJ6bQV3A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v33/HhyJU5sn9vOmLxNkIwRSjTVNWLEJ0LQV3A.ttf) format('truetype');
+}
