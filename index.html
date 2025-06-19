@@ -88,17 +88,54 @@
 
       <!-- strat music-box -->
       <div class="music-box">
+        <audio id="bg-music" src="music/music.mp3" autoplay loop></audio>
         <button class="music-box-toggle-btn">
           <i class="fa fa-music"></i>
         </button>
-
-        <div class="music-holder">
-          <iframe
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/326494474&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false"
-          ></iframe>
-        </div>
       </div>
       <!-- end music box -->
+
+      <!-- start of hero -->
+      <section class="hero w-100 h-100" id="heroopening">
+        <div class="hero-slider hero-slider-s1">
+          <div class="slide-item">
+            <img src="images/slider/slider-01.png" alt class="slider-bg" />
+          </div>
+          <div class="slide-item">
+            <img src="images/slider/slider-02.png" alt class="slider-bg" />
+          </div>
+        </div>
+        <div class="wedding-announcement" id="announcementopening">
+          <div class="couple-name-merried-text" id="couplenameopening">
+            <h2 class="wow slideInUp" data-wow-duration="1s">
+              Ainul &amp; Riyan
+            </h2>
+            <br />
+            <h5 class="wow fadeInUp text-white" data-wow-delay="2.05s">Yth.</h5>
+            <br />
+            <h6
+              class="wow fadeInUp text-white"
+              data-wow-delay="2.05s"
+              id="client"
+            ></h6>
+            <br />
+            <a
+              href="#hero"
+              class="see-location-btnn wow fadeInUp"
+              data-wow-delay="2.10s"
+              onClick="enableScroll()"
+              >Buka Undangan</a
+            >
+            <!-- <i class="fa fa-heart"></i> -->
+          </div>
+
+          <div class="save-the-date">
+            <h4>Save the date</h4>
+            <span class="date">5 Oktober 2025</span>
+          </div>
+        </div>
+      </section>
+      <!-- end of hero slider -->
 
       <!-- Start header -->
       <header id="myHeader" class="site-header header-style-1">
@@ -141,7 +178,7 @@
       <!-- end of header -->
 
       <!-- start of hero -->
-      <section class="hero">
+      <section class="hero w-100 h-100" id="hero">
         <div class="hero-slider hero-slider-s1">
           <div class="slide-item">
             <img src="images/slider/slider-01.png" alt class="slider-bg" />
@@ -201,37 +238,11 @@
             <div class="col col-xs-12">
               <div class="gb groom">
                 <div class="img-holder wow fadeInLeftSlow">
-                  <img src="images/couple/couple-03.png" alt />
+                  <img src="images/couple/couple-02.png" alt />
                 </div>
                 <div class="details">
                   <div class="details-inner">
-                    <h3>Siti Nur Ainul</h3>
-                    <p>
-                      Putri Ke-2 dari <br />
-                      Bapak Kamaludin & Ibu Irianti
-                    </p>
-                    <span class="signature">Ainul</span>
-                    <ul class="social-links">
-                      <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="gb bride">
-                <div class="details">
-                  <div class="details-inner">
-                    <h3>Riyan Suryana</h3>
+                    <h3>Riyan Suryana Putra</h3>
                     <p>
                       Putra Ke-2 dari <br />
                       Bapak Dana & Alm. Ibu Caswidah
@@ -253,8 +264,34 @@
                     </ul>
                   </div>
                 </div>
+              </div>
+              <div class="gb bride">
+                <div class="details">
+                  <div class="details-inner">
+                    <h3>Siti Nur Ainul</h3>
+                    <p>
+                      Putra Ke-2 dari <br />
+                      Bapak Kamaludin & Ibu Irianti
+                    </p>
+                    <span class="signature">Ainul</span>
+                    <ul class="social-links">
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 <div class="img-holder wow fadeInRightSlow">
-                  <img src="images/couple/couple-02.png" alt />
+                  <img src="images/couple/couple-03.png" alt />
                 </div>
               </div>
             </div>
@@ -268,8 +305,9 @@
       <!-- start cta -->
       <section
         class="cta section-padding parallax"
-        data-bg-image="images/banner/banner-05.png"
+        data-bg-image="images/banner/banner-07.png"
         data-speed="7"
+        id="cta"
       >
         <div class="container">
           <div class="row">
@@ -340,7 +378,7 @@
               <div class="event">
                 <div class="img-holder">
                   <img
-                    src="images/events/event-06.png"
+                    src="images/events/event-08.png"
                     alt
                     class="img img-fluid"
                   />
@@ -364,8 +402,9 @@
       <!-- start count-down-section -->
       <section
         class="count-down-section section-padding parallax"
-        data-bg-image="images/blog/img-1.jpg"
+        data-bg-image="images/banner/banner-06.png"
         data-speed="7"
+        id="count-down-section"
       >
         <div class="container">
           <div class="row">
@@ -483,6 +522,58 @@
                     <img src="images/gallery/9.jpg" alt class="img img-fluid" />
                   </a>
                 </div>
+                <div class="grid ceremony">
+                  <a
+                    href="images/gallery/10.jpg"
+                    class="fancybox"
+                    data-fancybox-group="gall-1"
+                  >
+                    <img
+                      src="images/gallery/10.jpg"
+                      alt
+                      class="img img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="grid ceremony">
+                  <a
+                    href="images/gallery/11.jpg"
+                    class="fancybox"
+                    data-fancybox-group="gall-1"
+                  >
+                    <img
+                      src="images/gallery/11.jpg"
+                      alt
+                      class="img img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="grid ceremony">
+                  <a
+                    href="images/gallery/12.jpg"
+                    class="fancybox"
+                    data-fancybox-group="gall-1"
+                  >
+                    <img
+                      src="images/gallery/12.jpg"
+                      alt
+                      class="img img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="grid ceremony">
+                  <a
+                    href="images/gallery/13.jpg"
+                    class="fancybox"
+                    data-fancybox-group="gall-1"
+                  >
+                    <img
+                      src="images/gallery/13.jpg"
+                      alt
+                      class="img img-fluid"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -492,8 +583,57 @@
       </section>
       <!-- end gallery-section -->
 
+      <!-- start gift-registration-section -->
+      <section class="gift-registration-section section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="section-title">
+                <div class="vertical-line">
+                  <span><i class="fi flaticon-two"></i></span>
+                </div>
+                <h2>Amplop Digital</h2>
+              </div>
+            </div>
+          </div>
+          <!-- end section-title -->
+
+          <div class="row content justify-content-center">
+            <div class="col-lg-10">
+              <p>
+                Doa restu anda merupakan karunia yang sangat berarti bagi kedua
+                mempelai. Namun jika memberi adalah ungkapan tanda kasih anda,
+                anda dapat menggunakan fitur berikut
+              </p>
+
+              <div class="gif-registration-slider">
+                <div class="register">
+                  <img
+                    src="images/gift/gift-09.png"
+                    alt
+                    class="img img-fluid"
+                  />
+                  <p>BCA 2770566625 an Siti Nur Ainul</p>
+                </div>
+                <div class="register">
+                  <img
+                    src="images/gift/gift-10.png"
+                    alt
+                    class="img img-fluid"
+                  />
+                  <p>Mandiri 1330023967045 an Riyan Suryana</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end gift-registration-section -->
+
       <!-- start footer -->
-      <footer class="site-footer">
+      <footer class="site-footer" id="site-footer">
         <div class="back-to-top">
           <a href="#" class="back-to-top-btn"
             ><span><i class="fi flaticon-cupid"></i></span
@@ -523,5 +663,49 @@
 
     <!-- Custom script for this template -->
     <script src="js/script.js"></script>
+    <script>
+      const rootElement = document.querySelector(":root");
+      const song = document.querySelector("#bg-music");
+      let isPlaying = false;
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        // localStorage.setItem('opened', 'true');
+        playAudio();
+      }
+
+      function playAudio() {
+        song.play();
+        isPlaying = true;
+      }
+
+      // if (!localStorage.getItem('opened')) {
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("n") || "";
+      const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+      const namaContainer = document.querySelector(
+        "#heroopening #announcementopening #couplenameopening h6"
+      );
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+
+      document.querySelector("#nama").value = nama;
+    </script>
   </body>
 </html>

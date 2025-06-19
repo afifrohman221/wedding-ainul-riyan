@@ -407,29 +407,26 @@
   /*------------------------------------------
         = GIFT REGISTRATION SLIDER
     -------------------------------------------*/
-  if ($(".gif-registration-slider").length) {
-    $(".gif-registration-slider").owlCarousel({
-      items: 3,
-      dots: false,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      smartSpeed: 1000,
-      loop: true,
-      margin: 20,
-      stagePadding: 10,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        480: {
-          items: 2,
-        },
-        768: {
-          items: 3,
-        },
-      },
-    });
-  }
+  // if ($(".gif-registration-slider").length) {
+  //   $(".gif-registration-slider").owlCarousel({
+  //     items: 2,
+  //     dots: false,
+  //     autoplay: true,
+  //     autoplayTimeout: 3000,
+  //     smartSpeed: 1000,
+  //     loop: false,
+  //     margin: 20,
+  //     stagePadding: 10,
+  //     responsive: {
+  //       0: {
+  //         items: 1,
+  //       },
+  //       480: {
+  //         items: 2,
+  //       },
+  //     },
+  //   });
+  // }
 
   /*------------------------------------------
         = RSVP FORM SUBMISSION
@@ -489,12 +486,34 @@
   /*------------------------------------------
         = TOGGLE MUSUC BIX
     -------------------------------------------*/
+  // if ($(".music-box").length) {
+  //   var musicBtn = $(".music-box-toggle-btn"),
+  //     musicBox = $(".music-holder");
+
+  //   musicBtn.on("click", function () {
+  //     musicBox.toggleClass("toggle-music-box");
+  //     return false;
+  //   });
+  // }
+
   if ($(".music-box").length) {
     var musicBtn = $(".music-box-toggle-btn"),
-      musicBox = $(".music-holder");
+      musicBox = $(".music-holder"),
+      audio = document.getElementById("bg-music");
 
+    // Optional: Unmute on button click
     musicBtn.on("click", function () {
       musicBox.toggleClass("toggle-music-box");
+
+      // Aktifkan suara
+      if (audio.muted) {
+        audio.muted = false;
+        audio.play();
+      } else {
+        audio.pause();
+        audio.muted = true;
+      }
+
       return false;
     });
   }

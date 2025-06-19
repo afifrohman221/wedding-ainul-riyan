@@ -2064,7 +2064,7 @@ a:focus {
 #0.5	footer
 --------------------------------------------------------------*/
 .site-footer {
-  background: url("../images/footer/footer-08.png") center center/cover no-repeat local;
+  background: url("../images/footer/footer-09.png") center center/cover no-repeat local;
   text-align: center;
   color: #fff;
   padding: 160px 0;
@@ -2992,6 +2992,17 @@ a:focus {
   color: #4b7a71;
 }
 
+.hero .wedding-announcement .couple-name-merried-text .see-location-btnn {
+  font-weight: 600;
+  color: #ffffff;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.hero .wedding-announcement .couple-name-merried-text .see-location-btnn:hover {
+  color: #d4fff7;
+}
+
 /*--------------------------------------------------------------
 #1.1	inportant-people-section
 --------------------------------------------------------------*/
@@ -3627,7 +3638,6 @@ a:focus {
 }
 
 .gift-registration-section .gif-registration-slider .register {
-  border: 1px solid #111;
   padding: 20px;
 }
 
